@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import '@salesforce-ux/design-system/assets/styles/salesforce-lightning-design-system.min.css'
 import '../index.css'
-import { Route, BrowserRouter, Link, Redirect, Switch } from 'react-router-dom'
+import { Route, HashRouter, Link, Redirect, Switch } from 'react-router-dom'
 import Login from './Login'
 import Register from './Register'
 import Home from './Home'
@@ -59,7 +59,7 @@ export default class App extends Component {
   }
   render() {
     return this.state.loading === true ? <h1>Loading</h1> : (
-      <BrowserRouter>
+      <HashRouter>
         <div className="slds-grid slds-grid--vertical">
           <div className="slds-container_fluid">
             <div className="slds-context-bar">
@@ -117,7 +117,7 @@ export default class App extends Component {
             </Switch>
           </div>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }
