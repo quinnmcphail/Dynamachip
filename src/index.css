@@ -1,0 +1,11 @@
+.currentUserNavBar {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  white-space: nowrap;
+  position: relative;
+  max-width: 15rem;
+}
