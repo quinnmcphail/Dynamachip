@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import '@salesforce-ux/design-system/assets/styles/salesforce-lightning-design-system.min.css'
 import '../index.css'
+import 'font-awesome/css/font-awesome.min.css'
 import { Route, HashRouter, Link, Redirect, Switch } from 'react-router-dom'
 import Login from './Login'
 import Register from './Register'
