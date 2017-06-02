@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.4026f9b9.css",
-  "main.css.map": "static/css/main.4026f9b9.css.map",
-  "main.js": "static/js/main.325e6e01.js",
-  "main.js.map": "static/js/main.325e6e01.js.map",
+  "main.css": "static/css/main.107f13ac.css",
+  "main.css.map": "static/css/main.107f13ac.css.map",
+  "main.js": "static/js/main.1ebf3391.js",
+  "main.js.map": "static/js/main.1ebf3391.js.map",
   "static/media/SalesforceSans-Bold.woff": "static/media/SalesforceSans-Bold.1a99b4b5.woff",
   "static/media/SalesforceSans-Bold.woff2": "static/media/SalesforceSans-Bold.68a71533.woff2",
   "static/media/SalesforceSans-BoldItalic.woff": "static/media/SalesforceSans-BoldItalic.41ae6b36.woff",
@@ -14,5 +14,10 @@
   "static/media/SalesforceSans-LightItalic.woff": "static/media/SalesforceSans-LightItalic.8080e8bc.woff",
   "static/media/SalesforceSans-LightItalic.woff2": "static/media/SalesforceSans-LightItalic.676a9c30.woff2",
   "static/media/SalesforceSans-Regular.woff": "static/media/SalesforceSans-Regular.401b32dd.woff",
-  "static/media/SalesforceSans-Regular.woff2": "static/media/SalesforceSans-Regular.aa41afda.woff2"
+  "static/media/SalesforceSans-Regular.woff2": "static/media/SalesforceSans-Regular.aa41afda.woff2",
+  "static/media/fontawesome-webfont.eot?v=4.7.0": "static/media/fontawesome-webfont.674f50d2.eot",
+  "static/media/fontawesome-webfont.svg?v=4.7.0": "static/media/fontawesome-webfont.912ec66d.svg",
+  "static/media/fontawesome-webfont.ttf?v=4.7.0": "static/media/fontawesome-webfont.b06871f2.ttf",
+  "static/media/fontawesome-webfont.woff2?v=4.7.0": "static/media/fontawesome-webfont.af7ae505.woff2",
+  "static/media/fontawesome-webfont.woff?v=4.7.0": "static/media/fontawesome-webfont.fee66e71.woff"
 }
