@@ -7,6 +7,8 @@
     "bootstrap": "^3.3.7",
     "firebase": "^4.0.0",
     "font-awesome": "^4.7.0",
+    "moment": "^2.18.1",
+    "papaparse": "^4.3.3",
     "re-base": "^3.0.1",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",

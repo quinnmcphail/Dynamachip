@@ -1,11 +1,28 @@
 import React, { Component } from 'react'
 
 export default class AddRace extends Component {
+    state = {
+        alert: false
+    }
+    showAlert = () => {
+        this.setState({
+            alert: true
+        })
+    }
+    hideAlert = () => {
+        this.setState({
+            alert: false
+        })
+    }
     handleSubmit= (e) => {
         e.preventDefault()
-        this.props.addRace({name:this.raceName.value})
-        this.raceName.value = ''
-        this.raceName.blur()
+        if(this.raceName.value === ''){
+            this.showAlert()
+        }else{
+            this.props.addRace({name:this.raceName.value,uploaded:false,loading:false})
+            this.raceName.value = ''
+            this.raceName.blur()
+        }
     }
     render () {
         return (
@@ -30,6 +47,21 @@ export default class AddRace extends Component {
                         <button onClick={this.handleSubmit} className="slds-button slds-button_brand"><i className="fa fa-plus" aria-hidden="true"></i></button>
                     </div>
                 </div>
+                {this.state.alert ? <div>
+                    <section role="alertdialog" tabIndex="-1" aria-labelledby="prompt-heading-id"
+                             aria-describedby="prompt-message-wrapper"
+                             className="slds-modal slds-fade-in-open slds-modal_prompt">
+                        <div className="slds-modal__container">
+                            <header className="slds-modal__header slds-theme_error slds-theme_alert-texture">
+                                <h2 className="slds-text-heading_medium" id="prompt-heading-id">You cannot have an empty race name!</h2>
+                            </header>
+                            <footer className="slds-modal__footer slds-theme_default">
+                                <button onClick={this.hideAlert} className="slds-button slds-button_neutral">Ok</button>
+                            </footer>
+                        </div>
+                    </section>
+                    <div className="slds-backdrop slds-backdrop_open"></div>
+                </div> : null}
             </article>
         )
     }
