@@ -108,12 +108,12 @@ export default class Dashboard extends Component {
             }
             return 0
         })
+        console.log(tempAthletes);
         base.post(`users/${this.state.user.uid}/athletes/${key}`, {data: tempAthletes}).then(e => {
             const races = {...this.state.races}
             races[key].uploaded = true
             races[key].loading = false
             this.setState({races})
-            console.log(e)
         }).catch(err => {
             console.error(err)
         })
@@ -133,11 +133,11 @@ export default class Dashboard extends Component {
                         {Object.keys(this.state.races).map((race) => {
                             return <Race race={this.state.races[race]} key={race} index={race}
                                          removeRace={this.removeRace} setCurrentRace={this.setCurrentRace}
-                                         uploadRaceCsv={this.uploadRaceCsv}/>
+                                         uploadRaceCsv={this.uploadRaceCsv} currentRace={this.state.currentRace}/>
                         })}
                         <AddRace addRace={this.addRace}/>
                     </div>
-                    <div className="slds-size--3-of-4 slds-p-around_medium">
+                    <div className="slds-size--3-of-4 slds-p-around_medium" style={{overflow: 'scroll'}}>
                         <AthleteList athletes={this.state.athletes}/>
                     </div>
                 </div>

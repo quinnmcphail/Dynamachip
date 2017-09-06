@@ -69,7 +69,7 @@ export default class Race extends Component {
                         <div className="slds-media__body">
                             <h2>
                                 <a onClick={this.setCurrentRace} className="slds-card__header-link slds-truncate">
-                                    <span className="slds-text-heading_small">{this.props.race.name}</span>
+                                    <span style={this.props.currentRace === this.props.index ? {textDecoration:'underline'} :{}} className="slds-text-heading_small">{this.props.race.name}</span>
                                 </a>
                             </h2>
                         </div>
